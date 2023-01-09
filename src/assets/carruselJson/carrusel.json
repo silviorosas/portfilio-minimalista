@@ -1,0 +1,33 @@
+{
+    "data":[
+       
+        {
+            "imagen":"assets/Java.png"
+        },
+       
+        {
+            "imagen":"assets/spring.png"
+        },
+        {
+            "imagen":"assets/go.webp"
+        },
+        {
+            "imagen":"assets/mysql.png"
+        },
+        {
+            "imagen":"assets/angular.png"
+        },
+        {
+            "imagen":"assets/prime.jpg"
+        },
+        {
+            "imagen":"assets/boot.png"
+        },
+        {
+            "imagen":"assets/h.png"
+        },
+        {
+            "imagen":"assets/git.png"
+        }
+    ]
+}

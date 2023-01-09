@@ -1,0 +1,47 @@
+ 
+<div class="flex flex-wrap align-items-center justify-content-center card-container ">
+  <div class="card text-center mt-4" style="width: 20rem; justify-content: center; align-items: center; display:flexbox; ">
+    <div class="card" style="text-align:center">
+      <p-card header="Calculadora">
+        <div [ngStyle]="{backgroundColor:'var(--indigo-500)'}" style="padding: 25px; border-radius: 6px;">
+          <form name="calcu">
+          <!--pantalla-->
+         
+            <input class="card-body bg-info w-full  " style="border-radius: 2px; height:30px; font-size: 18px; border-bottom: none;" 
+            type="textfield" name="ans" value="" autocomplete="off" readonly ><br>
+            <input class="card-body bg-info mb-2 w-full  " style="border-radius: 2px; height:30px; font-size: 18px; border-top:none;" 
+            type="textfield" name="an" value="" autocomplete="off" readonly ><br>
+         
+          <!--Operadores-->
+          <input [ngStyle]="{backgroundColor:'var(--orange-300)'}" type="button" value=" - "
+            onclick="document.calcu.ans.value+='-'" pInputText />
+          <input [ngStyle]="{backgroundColor:'var(--blue-300)'}" style="margin: 4px;" type="button" value=" + "
+          onclick="document.calcu.ans.value+='+'" pInputText />
+          <input [ngStyle]="{backgroundColor:'var(--yellow-300)'}" type="button" value=" / "
+          onclick="document.calcu.ans.value+='/'" pInputText />
+          <input [ngStyle]="{backgroundColor:'var(--indigo-300)'}" style="margin: 4px;" type="button" value=" * "
+          onclick="document.calcu.ans.value+='*'" pInputText /><br>
+          <!--numeros, igual, c y m -->
+          <input type="button" value=" 9 " onclick="document.calcu.ans.value+='9'" style="margin-left: 2px;" pInputText />
+          <input style="margin: 4px;" type="button" value=" 8 " onclick="document.calcu.ans.value+='8'" pInputText />
+          <input type="button" value=" 7 " onclick="document.calcu.ans.value+='7'" pInputText /><br>
+          <input type="button" value=" 4 " onclick="document.calcu.ans.value+='4'" style=" margin: 4px;"
+            pInputText />
+          <input type="button" value=" 5 " onclick="document.calcu.ans.value+='5'" pInputText />
+          <input style="margin: 4px; " type="button" value=" 6 " onclick="document.calcu.ans.value+='6'" pInputText /><br>
+          <input type="button" value=" 1 " style="margin-left: 2px;" onclick="document.calcu.ans.value+='1'" pInputText />
+          <input style="margin: 4px;" type="button" value=" 2 " onclick="document.calcu.ans.value+='2'" pInputText />
+          <input type="button" value=" 3 " onclick="document.calcu.ans.value+='3'" pInputText /><br>
+          <input style="margin: 4px;" type="button" value="0" onclick="document.calcu.ans.value+='0'" pInputText />
+          <input style="margin: 4px;" type="reset" value="C"  pInputText />
+          <input type="button" value=" = " onclick="document.calcu.an.value=eval(document.calcu.ans.value)"
+           pInputText />
+        </form>
+        </div>
+      </p-card>
+    </div>
+  </div>
+  
+
+
+

@@ -1,0 +1,51 @@
+
+    .product-item-content {
+       
+        border-radius: 3px;
+        margin: .3rem;
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .product-image {
+        width: 94%;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+    }
+
+    a:link, a:visited, a:active {
+        text-decoration:none;
+    }
+    
+/* paneles experiencia laboral */
+
+   :host ::ng-deep .dark-panel.p-panel 
+        .p-panel-header {
+            background: #5fc85f;
+        }
+    
+    :host ::ng-deep .blue-panel.p-panel 
+        .p-panel-header {
+            background: #5f80c8;
+            color: aliceblue;
+        }
+
+    :host ::ng-deep .orange-panel.p-panel 
+    .p-panel-header {
+        background: #315f8b;
+        color: aliceblue;
+    }
+   
+/*cards trabajos de educacion*/
+    :host ::ng-deep .azul-card.p-card 
+    .p-card-content {        
+        background: #315f8b;
+        color: aliceblue;
+        border-radius: 6px;
+        margin: -20px;
+    }
+    
+    
+    
+    
+  
+  

@@ -1,0 +1,337 @@
+<!--Encabezado-->
+
+<div class="surface-200 ">
+    <button class="surface-200 border-300 text-cyan-700" type="button" pButton icon="pi pi-bars"  (click)="menu.toggle($event)"></button>
+    <p-menu  #menu [popup]="true" [model]="items"></p-menu>
+    </div>
+
+<div class="card  surface-200" id="inicio">
+   
+    <div class="flex flex-wrap align-items-center justify-content-center card-container green-container">
+    
+        <div class="scalein animation-duration-2000 animation-iteration-2 flex align-items-center justify-content-center
+        font-bold bg-gray-200 text-white border-round m-2 px-2 py-2">
+    
+            <div class="grid grid-nogutter surface-section text-800  ">
+                <div class="col-12 md:col-6 p-6 text-center md:text-left flex align-items-center surface-200  ">
+                    <section>
+                        <span class="block text-4xl font-bold mb-1">Creando proyectos</span>
+                        <div class="text-6xl text-primary font-bold mb-3">Silvio Rosas Dev Fullstack</div>
+                        <p class="mt-0 mb-4 text-700 line-height-3">Programando para el futuro.</p>
+                        <!--<button pButton pRipple label="Demos" type="button" class="p-button-outlined"></button>-->
+                    </section>
+                </div>
+                <div class="col-12 md:col-6 overflow-hidden surface-200">
+                    <img src="assets/dev.jpg" alt="Image" class="md:ml-auto block md:h-full"
+                        style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%); width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Barra black-->
+
+<div class="bg-bluegray-800 text-gray-100 p-3 flex justify-content-between lg:justify-content-center align-items-center flex-wrap mt-4">
+    
+        <a class="flex align-items-center ml-2 mr-8 " >
+            <a class="text-white" href="#cont"><span class=" font-bold">Contacto</span></a>
+            <i class="pi pi-whatsapp text-gray-500 text-xl ml-1"></i>
+        </a>
+        <a class="flex align-items-center ml-0 mr-8">           
+            <a class="text-white" ><span >🔥Dev Sale</span></a>           
+        </a>
+    </div>    
+
+
+
+
+<!--Stacks para crear portfolio-->
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8 text-center" >
+    <div class="mb-3 font-bold text-2xl">
+        <span class="text-900">Portfolio. </span>
+        <span class="text-blue-600">Creado con los siguientes stacks</span>
+        <div class="text-700 text-sm mb-6">100% comprometido con el equipo de trabajo.</div>
+    </div>    
+    <div class="grid">
+        <div class="col-12 md:col-4 mb-2 px-5">
+            <span class="p-3 shadow-2 mb-2 inline-block surface-card" style="border-radius: 10px">
+                <i class="pi pi-server text-4xl text-blue-500"></i>
+            </span>
+            <div class="text-900 mb-3 font-medium">Backend</div>
+            <span class="text-700 text-sm line-height-3">Java-Springboot.</span><br>
+            <span class="text-700 text-sm line-height-3">También lo podría realizar con Go!</span>
+            
+        </div>
+        <div class="col-12 md:col-4 mb-2 px-5">
+            <span class="p-3 shadow-2 mb-3 inline-block surface-card" style="border-radius: 10px">
+                <i class="pi pi-desktop text-4xl text-blue-500"></i>
+            </span>
+        <div class="text-900 mb-2 font-medium">Frontend</div>
+            <span class="text-700 text-sm line-height-3">Angular</span><br>
+            <span class="text-700 text-sm line-height-3">PrimeNg</span>
+        </div>
+        <div class="col-12 md:col-4 mb-2 px-5">
+            <span class="p-3 shadow-2 mb-3 inline-block surface-card" style="border-radius: 10px">
+                <i class="pi pi-heart text-4xl text-blue-500"></i>
+            </span>
+        <div class="text-900 mb-2 font-medium">Desarrollado</div>
+            <span class="text-700 text-sm line-height-3">Con mucha pasión</span><br>
+            <span class="text-700 text-sm line-height-2">Mucho trabajo y estudio</span>
+        </div>
+        
+    </div>
+</div>
+
+<!--Barra black-->
+<div class="bg-bluegray-800 text-gray-100 p-3 flex justify-content-between 
+            lg:justify-content-center align-items-center flex-wrap ">    
+    <a class="flex align-items-center ml-2 mr-8 mb-2" >
+        <span class="text-xl font-bold" >Proyectos de Estudios</span>       
+    </a>  
+</div>
+
+<!--proyectos de estudio -->
+
+<div class="card mt-6 mb-4">
+    <div class="flex flex-wrap justify-content-center card-container blue-container gap-3">
+        <div class="border-round flex align-items-center justify-content-center">
+            <p-card styleClass="azul-card" >
+                    <ul class="list-none p-0 m-2 flex-grow-1">
+                    <li ><i class="pi pi-check-circle text-orange-500 mr-2"></i>Springboot</li>
+                    <li><i class="pi pi-check-circle text-orange-500 mr-2"></i>Thymeleaf</li>
+                    <li><i class="pi pi-check-circle text-orange-500 mr-2"></i>Bootstrap</li>
+                </ul><br>         
+            <button pButton type="button" label="Ver" class="p-button-text" routerLink="/java"></button> 
+            <img src="assets/lista.png" style="width:11rem;margin-right:10px;">          
+            </p-card>      
+        </div>
+        <div class="border-round text-white font-bold flex align-items-center justify-content-center">
+            <p-card styleClass="azul-card" >
+                    <ul class="list-none p-0 m-2 flex-grow-1">
+                    <li ><i class="pi pi-check-circle text-orange-500 mr-2"></i>Html</li>
+                    <li><i class="pi pi-check-circle text-orange-500 mr-2"></i>Css</li>
+                    <li><i class="pi pi-check-circle text-orange-500 mr-2"></i>Bootstrap</li>
+                </ul><br>                
+            <button pButton type="button" label="Ver" class="p-button-text" (click)="btnClick();"></button>   
+            <img src="assets/liebre.jpg" style="width:11rem;margin-right:10px;">        
+            </p-card> 
+        </div>
+        <div class="border-round flex align-items-center justify-content-center">
+            <p-card styleClass="azul-card" >
+                    <ul class="list-none p-0 m-2 flex-grow-1">
+                    <li><i class="pi pi-check-circle text-orange-500 mr-2"></i>Springboot</li>
+                    <li ><i class="pi pi-check-circle text-orange-500 mr-2"></i>Angular</li>
+                    <li><i class="pi pi-check-circle text-orange-500 mr-2"></i>PrimeNg</li>                  
+                </ul><br>  
+                <button pButton type="button" label="Ver" class="p-button-text" routerLink="/javangular"></button>               
+                <img src="assets/list2.png" style="width:11rem;margin-right:10px;">                      
+            </p-card>      
+        </div>
+        <div class="border-round text-white font-bold flex align-items-center justify-content-center">
+            <p-card styleClass="azul-card" >
+                <ul class="list-none p-0 m-2 flex-grow-1">
+                    <li ><i class="pi pi-check-circle text-orange-500 mr-2"></i>Angular</li>
+                    <li><i class="pi pi-check-circle text-orange-500 mr-2"></i>PrimeNg</li>
+                    <li><i class="pi pi-check-circle text-orange-500 mr-2"></i>Js</li>
+                </ul><br>
+                <button pButton type="button" label="Ver" class="p-button-text" routerLink="/calculadora"></button> 
+                <img src="assets/calcu.png" style="width:4rem; margin-right:10px;">                     
+            </p-card> 
+        </div>
+       
+    </div>
+</div>
+
+<!--Barra black-->
+<div class="bg-bluegray-800 text-gray-100 p-3 flex justify-content-between 
+            lg:justify-content-center align-items-center flex-wrap ">    
+    <a class="flex align-items-center ml-2 mr-8 mb-2" >
+        <span class="text-xl font-bold" >Desafíos Resueltos</span>       
+    </a>  
+</div>
+
+<div class="grid" id="proy"> 
+
+    <div class="col-6">
+        <p-card header="Consumir api externa con springboot">      
+     <button pButton type="button" label="Ver Más" class="p-button-text" routerLink="/dolar"></button>        
+        <img src="assets/tablaDolar.png" alt="Image" style=" width: 100%; ">
+        </p-card>
+    </div>
+
+    <div class="col-6">
+        <p-card header="Base datos Firebase - Front Angular">
+     <button pButton type="button" label="Ver Demo" class="p-button-text" (click)="btnClickB();" ></button>
+        <img src="assets/challeng.png" alt="Image"  style=" width: 72%;height:75%; ">
+        </p-card>
+    </div>
+
+ 
+</div>
+
+<!--Barra black experiencia laboral-->
+
+<div class="bg-bluegray-800 text-gray-100 p-3 flex justify-content-between 
+            lg:justify-content-center align-items-center flex-wrap mt-4 ">    
+    <a class="flex align-items-center ml-2 mr-8 mb-2" >
+        <span class="text-xl font-bold" >Experiencia Laboral</span>       
+    </a>  
+</div>
+
+<div class="flex flex-wrap align-items-center justify-content-center card-container green-container" id="lab">  
+<div class="panel col-8 mt-4  ">
+<p-panel  header="Golang-Angular-PrimeFaces-PrimeNg"  styleClass="blue-panel">
+    <button pButton type="button" label="Ver Demo" class="p-button-text" routerLink="/go"></button>
+    <img src="assets/dev2.jpg" alt="Image" class="md:ml block  " style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%); width: 70%; margin-left: 29%;">
+
+</p-panel>
+</div>
+<div class="panel col-8 mt-4  ">
+    <p-panel  header="Java-Springboot-Angular-Material"  styleClass="dark-panel">
+        <button pButton type="button" label="Ver Demo" class="p-button-text " routerLink="/javaspring"></button>
+        <img src="assets/dev4.jpg" alt="Image" class="md:ml block  " style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%); width: 70%; margin-left: 29%;">
+    
+    </p-panel>
+    </div>
+    <div class="panel col-8 mt-4  ">
+        <p-panel  header="Java-Springboot+Angular-Bootstrap (Heroku-CleverCloud-Firebase)"  styleClass="orange-panel">
+            <a href="https://escuela-battini.web.app" target="blank"><button pButton type="button" label="Ver Demo" class="p-button-text " ></button></a>
+            <img src="assets/dev2.jpg" alt="Image" class="md:ml block  " style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%); width: 70%; margin-left: 29%;">
+        
+        </p-panel>
+    </div>
+</div>    
+
+
+<!--Barra black-->
+
+<div class="bg-bluegray-800 text-gray-100 p-3 flex justify-content-between lg:justify-content-center align-items-center flex-wrap" id="stack">
+    <a class="flex align-items-center ml-2 mr-8">
+    <span class="text-xl font-bold" >Mis stacks</span> 
+    </a>   
+</div>
+
+<!--Carrusel-->
+<!--carrusel es value traido del ts-->
+<div >
+<p-carousel [value]="carrusel" [numVisible]="3" [numScroll]="1"  [autoplayInterval]="3000" >
+    <ng-template let-carrusel pTemplate="item">
+ <!--carrusel.imagen imagen es el valor traido del carrusel.json y nomdre de atributo en models -->
+ <div class="product-item">
+    <div class="product-item-content">
+        <div class="mb-3">       
+            <img src="{{carrusel.imagen}}" class="product-image" alt=""> 
+        </div>
+    </div>
+</div>   
+      
+    </ng-template>
+</p-carousel>
+
+</div>
+
+<!--Barra black-->
+
+<div class="bg-bluegray-800 text-gray-100 p-3 flex justify-content-between lg:justify-content-center align-items-center flex-wrap  ">
+   
+       
+    <a class="flex align-items-center ml-2 mr-8">
+        <a class="text-white" href="#inicio"><span class=" font-bold">Inicio</span></a>
+        <i class="pi pi-home text-purple-500 text-xl ml-1" ></i>
+    </a>
+    <a class="flex align-items-center ml-2 mr-8">
+        <a class="text-white" href="#proy"><span class=" font-bold">Proyectos</span></a>
+        <i class="pi pi-desktop text-gray-500 text-xl ml-1"></i>
+    </a>
+   
+</div>
+
+<!--form-->
+<div class="flex justify-content-center flex-wrap card-container   mt-4 mb-4 " id="reg">
+<div class="surface-card p-4 shadow-2 border-round w-full lg:w-4 ">
+    <div class="text-center mb-5">
+        <img src="assets/log.jpg" alt="Image" height="70" class="mb-3">
+        <div class="text-900 text-3xl font-medium mb-3">Registrate</div>
+        <span class="text-600 font-medium line-height-3">Recibí las mejores promociones</span>
+        <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer">Create today!</a>
+    </div>
+
+    <div>
+        <label for="email1" class="block text-900 font-medium mb-2">Email</label>
+        <input id="email1" type="text" pInputText class="w-full mb-3">
+
+        <label for="password1" class="block text-900 font-medium mb-2">Password</label>
+        <input id="password1" type="password" pInputText class="w-full mb-3">
+
+        <div class="flex align-items-center justify-content-between mb-6">
+            <div class="flex align-items-center">
+                <p-checkbox id="rememberme1" [binary]="true" styleClass="mr-2"></p-checkbox>
+                <label for="rememberme1" class="text-900">Remember me</label>
+            </div>
+            <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Forgot password?</a>
+        </div>
+
+        <button pButton pRipple label="Sign In" icon="pi pi-user" class="w-full mb-4" routerLink="nofound"></button>
+    </div>
+</div>
+</div>
+
+<!--Contacto-->
+<div class="bg-bluegray-800 text-gray-100 px-4 py-5 md:px-6 lg:px-8" id="cont">
+    <div class="grid">
+        <div class="col-12 md:col-6 lg:col-3 ">
+            
+                <div class="flex justify-content-between mb-3">
+                    <div>
+                        <span class="block text-500 font-medium mb-1 "><i class="pi pi-envelope text-blue-500 text-xl mr-1"></i>Email</span>
+                        <div class="text-900 text-white font-medium text-base ">silviorosas@yahoo.com.ar</div>
+                    </div>                   
+                </div> 
+            
+        </div>
+        <div class="col-12 md:col-6 lg:col-3">
+            
+                <div class="flex justify-content-between mb-3">
+                    <div>
+                        <span class="block text-500 font-medium mb-1"> <i class="pi pi-phone text-orange-500 text-xl mr-1"></i>Teléfono</span>
+                        <div class="text-900 text-white font-medium text-base">2604202706</div>
+                    </div>                  
+                </div>             
+            
+        </div>
+        <div class="col-12 md:col-6 lg:col-3">
+            
+                <div class="flex justify-content-between mb-3">
+                    <div>
+                        <span>
+                            <a class="block text-500 font-medium mb-1" href="https://www.linkedin.com/in/silviorosas/"
+                                      target="_blank">
+                            <span class=" font-bold"><i class="pi pi-linkedin text-cyan-500 text-xl mr-1"></i>Linkedin</span></a>
+                        </span>
+                        <div class="text-900 text-white font-medium text-base">linkedin.com/in/silviorosas/</div>
+                    </div>
+                   
+                </div>               
+            
+        </div>
+        <div class="col-12 md:col-6 lg:col-3">
+            
+                <div class="flex justify-content-between mb-3">
+                    <div>
+                        <span>
+                            <a class="block text-500 font-medium mb-1" href="https://github.com/silviorosas"
+                                      target="_blank">
+                            <span class=" font-bold"> <i class="pi pi-github text-purple-500 text-xl mr-1"></i>Github</span></a>
+                        </span>
+                        <div class="text-900 text-white font-medium text-base">github.com/silviorosas</div>
+                    </div>
+                    
+                </div>               
+            
+        </div>
+    </div>
+</div>
+
