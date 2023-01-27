@@ -18,8 +18,6 @@ import {CarouselModule} from 'primeng/carousel';
 import {CardModule} from 'primeng/card';
 import {CheckboxModule} from 'primeng/checkbox';
 import {BreadcrumbModule} from 'primeng/breadcrumb';
-import { CalculadoraComponent } from './home/calculadora/calculadora/calculadora.component';
-import { JavaComponent } from './home/java-thymeleaf/java/java.component';
 import {PanelModule} from 'primeng/panel';
 import { JavangularComponent } from './home/javangular/javangular.component';
 import { GoComponent } from './home/go/go.component';
@@ -35,9 +33,7 @@ import { DolarComponent } from './dolar/dolar.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    CalculadoraComponent,
-    JavaComponent,
+    HomeComponent,   
     JavangularComponent,
     GoComponent,
     JavaspringComponent,

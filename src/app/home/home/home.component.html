@@ -65,13 +65,15 @@
             <span class="text-700 text-sm line-height-3">También lo podría realizar con Go!</span>
             
         </div>
+        
         <div class="col-12 md:col-4 mb-2 px-5">
             <span class="p-3 shadow-2 mb-3 inline-block surface-card" style="border-radius: 10px">
                 <i class="pi pi-desktop text-4xl text-blue-500"></i>
             </span>
         <div class="text-900 mb-2 font-medium">Frontend</div>
             <span class="text-700 text-sm line-height-3">Angular</span><br>
-            <span class="text-700 text-sm line-height-3">PrimeNg</span>
+            <span class="text-700 text-sm line-height-3">PrimeNg</span><br>
+            <span class="text-700 text-sm line-height-3">Responsive</span>
         </div>
         <div class="col-12 md:col-4 mb-2 px-5">
             <span class="p-3 shadow-2 mb-3 inline-block surface-card" style="border-radius: 10px">
@@ -96,51 +98,32 @@
 <!--proyectos de estudio -->
 
 <div class="card mt-6 mb-4">
-    <div class="flex flex-wrap justify-content-center card-container blue-container gap-3">
-        <div class="border-round flex align-items-center justify-content-center">
-            <p-card styleClass="azul-card" >
-                    <ul class="list-none p-0 m-2 flex-grow-1">
-                    <li ><i class="pi pi-check-circle text-orange-500 mr-2"></i>Springboot</li>
-                    <li><i class="pi pi-check-circle text-orange-500 mr-2"></i>Thymeleaf</li>
-                    <li><i class="pi pi-check-circle text-orange-500 mr-2"></i>Bootstrap</li>
-                </ul><br>         
-            <button pButton type="button" label="Ver" class="p-button-text" routerLink="/java"></button> 
-            <img src="assets/lista.png" style="width:11rem;margin-right:10px;">          
-            </p-card>      
-        </div>
+    <div class="flex flex-wrap justify-content-center card-container  gap-6">
+     
         <div class="border-round text-white font-bold flex align-items-center justify-content-center">
-            <p-card styleClass="azul-card" >
+            <p-card styleClass="azul-card" >  
+                <button pButton type="button" label="Ver" class="p-button-text" (click)="btnClick();"></button>              
                     <ul class="list-none p-0 m-2 flex-grow-1">
                     <li ><i class="pi pi-check-circle text-orange-500 mr-2"></i>Html</li>
                     <li><i class="pi pi-check-circle text-orange-500 mr-2"></i>Css</li>
-                    <li><i class="pi pi-check-circle text-orange-500 mr-2"></i>Bootstrap</li>
-                </ul><br>                
-            <button pButton type="button" label="Ver" class="p-button-text" (click)="btnClick();"></button>   
-            <img src="assets/liebre.jpg" style="width:11rem;margin-right:10px;">        
-            </p-card> 
+                    <li><i class="pi pi-check-circle text-orange-500 mr-2"></i>Bootstrap</li>                    
+                </ul><br>              
+            <img src="assets/liebre.jpg" style="width:16rem;padding: 14px;">                    
+            </p-card>
+
         </div>
         <div class="border-round flex align-items-center justify-content-center">
             <p-card styleClass="azul-card" >
+                <button pButton type="button" label="Ver" class="p-button-text" routerLink="/javangular"></button>
                     <ul class="list-none p-0 m-2 flex-grow-1">
                     <li><i class="pi pi-check-circle text-orange-500 mr-2"></i>Springboot</li>
                     <li ><i class="pi pi-check-circle text-orange-500 mr-2"></i>Angular</li>
                     <li><i class="pi pi-check-circle text-orange-500 mr-2"></i>PrimeNg</li>                  
-                </ul><br>  
-                <button pButton type="button" label="Ver" class="p-button-text" routerLink="/javangular"></button>               
-                <img src="assets/list2.png" style="width:11rem;margin-right:10px;">                      
+                </ul><br>                                
+                <img src="assets/list2.png" style="width:20rem;padding: 14px;">                      
             </p-card>      
         </div>
-        <div class="border-round text-white font-bold flex align-items-center justify-content-center">
-            <p-card styleClass="azul-card" >
-                <ul class="list-none p-0 m-2 flex-grow-1">
-                    <li ><i class="pi pi-check-circle text-orange-500 mr-2"></i>Angular</li>
-                    <li><i class="pi pi-check-circle text-orange-500 mr-2"></i>PrimeNg</li>
-                    <li><i class="pi pi-check-circle text-orange-500 mr-2"></i>Js</li>
-                </ul><br>
-                <button pButton type="button" label="Ver" class="p-button-text" routerLink="/calculadora"></button> 
-                <img src="assets/calcu.png" style="width:4rem; margin-right:10px;">                     
-            </p-card> 
-        </div>
+      
        
     </div>
 </div>
@@ -153,35 +136,36 @@
     </a>  
 </div>
 
-<div class="grid" id="proy"> 
 
-    <div class="col-6">
-        <p-card header="Consumir api externa con springboot">      
-     <button pButton type="button" label="Ver Más" class="p-button-text" routerLink="/dolar"></button>        
-        <img src="assets/tablaDolar.png" alt="Image" style=" width: 100%; ">
-        </p-card>
+
+<div class="bg-bluegray-700 px-4 py-4 md:px-6 lg:px-8 ">   
+
+    <div class="grid bg-bluegray-500 ">
+        <div class="col-12 lg:col-6">           
+                <div class="shadow-2 p-1 h-full flex flex-column surface-card  " style="border-radius: 6px">                                  
+                    <button pButton type="button" label="Ver Más" class="p-button-text" (click)="btnClickB();" ></button>
+                    <img src="assets/challeng.png" alt="Image"  style=" width:80%;margin-left: 10%; ">                 
+            </div>
+        </div>
+        <div class="col-12 lg:col-6">            
+                <div class="shadow-2 p-1 h-full flex flex-column surface-card " style="border-radius: 6px">
+                    <button pButton type="button" label="Ver Más" class="p-button-text" routerLink="/dolar"></button>                                   
+                    <img  src="assets/tablaDolar.png"  alt="" srcset="">            
+                </div>        
+        </div> 
     </div>
-
-    <div class="col-6">
-        <p-card header="Base datos Firebase - Front Angular">
-     <button pButton type="button" label="Ver Demo" class="p-button-text" (click)="btnClickB();" ></button>
-        <img src="assets/challeng.png" alt="Image"  style=" width: 72%;height:75%; ">
-        </p-card>
-    </div>
-
- 
 </div>
 
 <!--Barra black experiencia laboral-->
 
 <div class="bg-bluegray-800 text-gray-100 p-3 flex justify-content-between 
-            lg:justify-content-center align-items-center flex-wrap mt-4 ">    
+            lg:justify-content-center align-items-center flex-wrap mt-4">    
     <a class="flex align-items-center ml-2 mr-8 mb-2" >
         <span class="text-xl font-bold" >Experiencia Laboral</span>       
     </a>  
 </div>
 
-<div class="flex flex-wrap align-items-center justify-content-center card-container green-container" id="lab">  
+<div class="flex flex-wrap align-items-center justify-content-center card-container green-container surface-200 " id="lab">  
 <div class="panel col-8 mt-4  ">
 <p-panel  header="Golang-Angular-PrimeFaces-PrimeNg"  styleClass="blue-panel">
     <button pButton type="button" label="Ver Demo" class="p-button-text" routerLink="/go"></button>
@@ -196,7 +180,7 @@
     
     </p-panel>
     </div>
-    <div class="panel col-8 mt-4  ">
+    <div class="panel col-8 mt-4 mb-4  ">
         <p-panel  header="Java-Springboot+Angular-Bootstrap (Heroku-CleverCloud-Firebase)"  styleClass="orange-panel">
             <a href="https://escuela-battini.web.app" target="blank"><button pButton type="button" label="Ver Demo" class="p-button-text " ></button></a>
             <img src="assets/dev2.jpg" alt="Image" class="md:ml block  " style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%); width: 70%; margin-left: 29%;">
@@ -217,7 +201,7 @@
 <!--Carrusel-->
 <!--carrusel es value traido del ts-->
 <div >
-<p-carousel [value]="carrusel" [numVisible]="3" [numScroll]="1"  [autoplayInterval]="3000" >
+<p-carousel [value]="carrusel" [numVisible]="3" [numScroll]="2"  [autoplayInterval]="1500" >
     <ng-template let-carrusel pTemplate="item">
  <!--carrusel.imagen imagen es el valor traido del carrusel.json y nomdre de atributo en models -->
  <div class="product-item">

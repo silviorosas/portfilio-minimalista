@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home/home.component';
-import { CalculadoraComponent } from './home/calculadora/calculadora/calculadora.component';
-import { JavaComponent } from './home/java-thymeleaf/java/java.component';
 import { JavangularComponent } from './home/javangular/javangular.component';
 import { GoComponent } from './home/go/go.component';
 import { JavaspringComponent } from './javaspring/javaspring.component';
@@ -15,9 +13,7 @@ import { DolarComponent } from './dolar/dolar.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'calculadora', component: CalculadoraComponent },
-  { path: 'java', component: JavaComponent },
+  { path: 'home', component: HomeComponent },   
   { path: 'javangular', component: JavangularComponent },
   { path: 'go', component: GoComponent },
   { path: 'javaspring', component: JavaspringComponent},
