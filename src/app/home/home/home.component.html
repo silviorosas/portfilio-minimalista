@@ -1,11 +1,13 @@
 <!--Encabezado-->
 
-<div class="surface-200 ">
-    <button class="surface-200 border-300 text-cyan-700" type="button" pButton icon="pi pi-bars"  (click)="menu.toggle($event)"></button>
-    <p-menu  #menu [popup]="true" [model]="items"></p-menu>
-    </div>
+ 
 
 <div class="card  surface-200" id="inicio">
+    <div class="surface-200  mb-7">
+        <button class="surface-200 border-300 text-cyan-700" type="button" pButton icon="pi pi-bars"  (click)="menu.toggle($event)"></button>
+         <p-menu  #menu [popup]="true" [model]="items"></p-menu> 
+        
+         </div>
    
     <div class="flex flex-wrap align-items-center justify-content-center card-container green-container">
     
@@ -97,7 +99,7 @@
 
 <!--proyectos de estudio -->
 
-<div class="card mt-6 mb-4">
+<div class="card mt-6 mb-4" id="proy">
     <div class="flex flex-wrap justify-content-center card-container  gap-6">
      
         <div class="border-round text-white font-bold flex align-items-center justify-content-center">
@@ -291,7 +293,7 @@
                 <div class="flex justify-content-between mb-3">
                     <div>
                         <span>
-                            <a class="block text-500 font-medium mb-1" href="https://www.linkedin.com/in/silviorosas/"
+                            <a class="block text-500 font-medium mb-1" href="https://www.linkedin.com/in/silvio-rosas-60481a297/"
                                       target="_blank">
                             <span class=" font-bold"><i class="pi pi-linkedin text-cyan-500 text-xl mr-1"></i>Linkedin</span></a>
                         </span>
